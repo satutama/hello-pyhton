@@ -7,6 +7,7 @@ print(type(variableRule1))
 name = input('Who are you? ')
 print('Welcome', name)
 
+# Display US floor after user input
 inp = input('Europe floor? ')
 usf = int(inp) + 1
 
