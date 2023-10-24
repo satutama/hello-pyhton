@@ -27,4 +27,13 @@ if z > 1:
     print('More than one')
     if z < 100:
         print('Less than 100')
-print('All done')
+print('Nested decisions done')
+
+# Two-way decisions
+y = 4
+if y > 2:
+    print('More than one')
+else :
+    print('Less than 100')
+
+print('Two way decisions done')
