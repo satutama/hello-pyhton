@@ -21,3 +21,10 @@ if x != 6:
 # Blank lines are ignored - they do not affect indentation
 # Comments on  a line by themselves are ignored with regard to indentation
 
+# Nested Decisions
+z = 42
+if z > 1:
+    print('More than one')
+    if z < 100:
+        print('Less than 100')
+print('All done')
