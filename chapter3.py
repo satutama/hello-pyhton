@@ -35,7 +35,6 @@ if y > 2:
     print('More than one')
 else :
     print('Less than 100')
-
 print('Two way decisions done')
 
 # Multiway
@@ -46,5 +45,12 @@ elif y < 10:
     print('Less than 10')
 else :
     print('Less than 100')
-
 print('multiway done')
+
+# Try/Except structure
+astr= 'Hello Sat'
+try:
+    istr = int(astr)
+except:
+    istr = -1
+print('First', istr)
