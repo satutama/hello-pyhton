@@ -37,3 +37,14 @@ else :
     print('Less than 100')
 
 print('Two way decisions done')
+
+# Multiway
+y = 4
+if y < 2:
+    print('More than one')
+elif y < 10:
+    print('Less than 10')
+else :
+    print('Less than 100')
+
+print('multiway done')
