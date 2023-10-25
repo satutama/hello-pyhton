@@ -14,7 +14,7 @@ tiny = min(hello)
 print(big)
 print(tiny)
 
-#Arguments and parameter
+# Arguments and parameter
 def greet(lang):
     if lang == 'es':
         print('Hola')
@@ -26,3 +26,9 @@ def greet(lang):
 greet('es')
 greet('fr')
 greet('test')
+
+# Return values
+def addTwo(a,b):
+    return a+b
+
+print(addTwo(1,5))
