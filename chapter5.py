@@ -24,3 +24,9 @@ while True:
         break
     print(line)
 print('Done!')
+
+# Definite loops
+array = [5,4,3,2,1]
+for i in array:
+    print(i)
+print('Blastoff!')
