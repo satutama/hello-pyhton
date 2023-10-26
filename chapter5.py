@@ -30,3 +30,13 @@ numbers = [5,4,3,2,1]
 for i in numbers:
     print(i)
 print('Blastoff!')
+
+
+# Loop Idioms
+largest_so_far = -1
+for the_num in [9, 31,42,5,1,73]:
+    if the_num > largest_so_far:
+        largest_so_far = the_num
+    print(largest_so_far)
+
+print('Largest is', largest_so_far)
