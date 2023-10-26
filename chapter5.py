@@ -6,3 +6,11 @@ while n > 0:
     print('Rinse')
     n = n - 1
 print('Dry off!')
+
+# breaking out of loop
+while True:
+    line = input('> ')
+    if line == 'done':
+        break
+    print(line)
+print('Done!')
