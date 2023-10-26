@@ -26,7 +26,7 @@ while True:
 print('Done!')
 
 # Definite loops
-array = [5,4,3,2,1]
-for i in array:
+numbers = [5,4,3,2,1]
+for i in numbers:
     print(i)
 print('Blastoff!')
