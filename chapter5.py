@@ -40,3 +40,11 @@ for the_num in [9, 31,42,5,1,73]:
     print(largest_so_far)
 
 print('Largest is', largest_so_far)
+
+smallest_so_far = 1000
+for the_num in [200, 31,42,5,1,73]:
+    if the_num < smallest_so_far:
+        smallest_so_far = the_num
+    print(smallest_so_far)
+
+print('smallest is', smallest_so_far)
