@@ -41,13 +41,18 @@ for the_num in [9, 31,42,5,1,73]:
 
 print('Largest is', largest_so_far)
 
-smallest_so_far = 1000
+smallest_so_far = None
 for the_num in [200, 31,42,5,1,73]:
-    if the_num < smallest_so_far:
+    if smallest_so_far is None:
+        smallest_so_far = the_num
+    elif the_num < smallest_so_far:
         smallest_so_far = the_num
     print(smallest_so_far)
 
 print('smallest is', smallest_so_far)
+#is similar to but stronger than ==
+#is not alos is a logical operator
+#use is sparringly, preferably only when using booleans and None types
 
 # Counting in a loop
 zork = 0
@@ -80,4 +85,14 @@ print('Before')
 for value in [9,41,12,3,74,15]:
     if value > 20:
         print('Large number', value)
+print('Áfter')
+
+# search using a boolean variable
+found = False
+print('Before')
+for value in [9,41,12,3,74,15]:
+    if value == 3:
+        found = True
+        break
+    print(found, value)
 print('Áfter')
