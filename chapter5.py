@@ -74,3 +74,10 @@ for thing in [9,41,12,3,74,15]:
     sum = sum + thing
     print(count, sum, thing)
 print('After', count, sum, sum/count)
+
+# filtering in a loop
+print('Before')
+for value in [9,41,12,3,74,15]:
+    if value > 20:
+        print('Large number', value)
+print('Áfter')
