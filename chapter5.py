@@ -48,3 +48,11 @@ for the_num in [200, 31,42,5,1,73]:
     print(smallest_so_far)
 
 print('smallest is', smallest_so_far)
+
+# Counting in a loop
+zork = 0
+print('Before', zork)
+for thing in [9,41,12,3,74,15]:
+    zork = zork + 1
+    print(zork, thing)
+print('After', zork)
