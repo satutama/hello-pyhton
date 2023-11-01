@@ -16,3 +16,10 @@ while index < characterLength:
 for letter in fruit:
     print(letter)
 # more elegant, iteration variable is completely taken care of by the for loop
+
+# Looping and counting
+countLetterA = 0
+for letter in fruit:
+    if letter == 'a':
+        countLetterA = countLetterA + 1
+print(countLetterA)
