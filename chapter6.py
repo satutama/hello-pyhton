@@ -36,3 +36,12 @@ print(s[:]) # Monty Python
 # if the second number is beyonf the end of the string, it stops at the end
 # if we omit the first, it is assumed to be the begining of the string
 # if we omit the second, it is assumed to be the end of the string
+
+# Using in as a logical operator
+fruit = 'banana'
+'n' in fruit # True
+'m' in fruit # False
+'nan' in fruit # True
+if 'n' in fruit:
+    print('found it')
+# checking one string is in another string
