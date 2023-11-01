@@ -45,3 +45,34 @@ fruit = 'banana'
 if 'n' in fruit:
     print('found it')
 # checking one string is in another string
+
+# String Library
+greet = 'Hello Bob'
+zap = greet.lower() # hello bob
+dir(greet) # gives you list of methods for strings
+# these function don't modify original, instead return a new string
+
+# Searching a string
+pos = fruit.find('na') # 2
+aa = fruit.find('z') # -1
+
+# Search and Replace
+nstr = greet.replace('Bob', 'Jane') # Hello Jane
+nstr = greet.replace('o', 'X') # HellX BXb
+
+# Stripping Whitespace
+greet = '   Hello Bob     '
+greet.lstrip() # 'Hello Bob     '
+greet.rstrip() # '    Hello Bob'
+greet.strip() # 'Hello Bob'
+
+# Prefixes
+line = 'Please have a nice day'
+line.startswith('Please') # True
+line.startswith('p') # False
+
+# Parsing and Extracting
+data = 'From stephen.marquard@uct.ac.ca Sat jan 5'
+atpos = data.find('@') # 21
+sppos = data.find(' ', atpos) # 31
+host = data[atpos + 1 : sppos] #uct.ac.za
