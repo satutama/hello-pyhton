@@ -11,3 +11,8 @@ while index < characterLength:
     letter = fruit[index]
     print(letter)
     index = index + 1
+
+# Looping through strings - for
+for letter in fruit:
+    print(letter)
+# more elegant, iteration variable is completely taken care of by the for loop
