@@ -36,3 +36,11 @@ for line in fhand:
         print(line)
 # We can strip the whitespace from the right hand side of string using rstrip
 # the newline is considered white space and is stripped
+
+# skipping with continue
+# we can conveniently skip a line by using the continue statement
+fhand = open('mbox.txt')
+for line in fhand:
+    line = line.rstrip()
+    if not line.startswith('from:'):
+        continue
