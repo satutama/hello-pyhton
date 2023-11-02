@@ -15,9 +15,15 @@ xfile = open('mbox.txt')
 for line in xfile:
     print(line)
 
-#counting lines in a file
+# counting lines in a file
 fhand = open('mbox.txt')
 count = 0
 for line in fhand:
     count = count + 1
 print(count)
+
+# reading the *whole* file
+fhand = open('mbox.txt')
+inp = fhand.read()
+print(len(inp))
+print(inp[:20])
