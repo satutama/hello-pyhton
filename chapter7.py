@@ -20,10 +20,16 @@ fhand = open('mbox.txt')
 count = 0
 for line in fhand:
     count = count + 1
-print(count)
+# print(count)
 
 # reading the *whole* file
 fhand = open('mbox.txt')
 inp = fhand.read()
-print(len(inp))
-print(inp[:20])
+# print(len(inp))
+# print(inp[:20])
+
+# searching through file
+fhand = open('mbox.txt')
+for line in fhand:
+    if line.startswith('from:'):
+        print(line)
