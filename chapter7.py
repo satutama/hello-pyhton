@@ -31,5 +31,8 @@ inp = fhand.read()
 # searching through file
 fhand = open('mbox.txt')
 for line in fhand:
+    line = line.rstrip()
     if line.startswith('from:'):
         print(line)
+# We can strip the whitespace from the right hand side of string using rstrip
+# the newline is considered white space and is stripped
