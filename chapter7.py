@@ -12,5 +12,12 @@ print(stuff)
 # each line in the file is a string in the sequence
 # sequence is an ordered set
 xfile = open('mbox.txt')
-for cheese in xfile:
-    print(cheese)
+for line in xfile:
+    print(line)
+
+#counting lines in a file
+fhand = open('mbox.txt')
+count = 0
+for line in fhand:
+    count = count + 1
+print(count)
