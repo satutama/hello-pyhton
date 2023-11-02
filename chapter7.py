@@ -7,3 +7,10 @@ print(fhand)
 stuff = 'Hello\nWorld'
 print(stuff)
 #newline is 1 character not 2
+
+# File Handle as a sequence
+# each line in the file is a string in the sequence
+# sequence is an ordered set
+xfile = open('mbox.txt')
+for cheese in xfile:
+    print(cheese)
