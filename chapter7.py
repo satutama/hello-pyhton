@@ -44,3 +44,11 @@ for line in fhand:
     line = line.rstrip()
     if not line.startswith('from:'):
         continue
+
+# using in to select lines
+# we can look for a string anywhere in a line as our selection criteria
+fhand = open('mbox.txt')
+for line in fhand:
+    line = line.rstrip()
+    if not 'uct.ac.za' in line:
+        continue
