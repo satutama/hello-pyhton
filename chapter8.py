@@ -20,3 +20,18 @@ print('done')
 lotto = [2,14,2,42,5,2]
 lotto[2] = 28 
 # lotto = [2,14,28,42,5,2]
+
+# How long is a list
+print(len(lotto))
+
+# Using the range function
+# range function returns a list of numbers that range from zero to one less than the parameter
+# we can construc an index loop using for and an integer iterator
+print(range(4)) #[0,1,2,3]
+print(len(friends))
+print(range(len(friends))) #[0,1,2]
+
+for i in range(len(friends)):
+    friend = friends[i]
+    print('Happy new year', friend)
+# the same thing as the first for above
