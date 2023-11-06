@@ -62,6 +62,7 @@ dir(stuff)
 # List can be sorted with sort()
 # built in functions that take lists as parameter len, max, min, sum
 
+# get average with list instead of sum and count var like chapter 5
 numlist = list()
 while True:
     inp = input('Enter a number: ')
