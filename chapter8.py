@@ -44,3 +44,9 @@ c = a + b # [1,2,3,4,5,6]
 # Lists slicing
 # c[1:3] > [2, 3]
 # c[:4] -> [1, 2, 3, 4]
+
+# Building a list from scratch
+stuff = list()
+stuff.append('book')
+stuff.append(99)
+# stuff = ['book', 99]
