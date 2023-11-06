@@ -61,3 +61,12 @@ dir(stuff)
 
 # List can be sorted with sort()
 # built in functions that take lists as parameter len, max, min, sum
+
+numlist = list()
+while True:
+    inp = input('Enter a number: ')
+    if inp == 'done': break
+    value = float(inp)
+    numlist.append(value)
+
+average = sum(numlist) / len(numlist)
