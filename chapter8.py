@@ -50,3 +50,14 @@ stuff = list()
 stuff.append('book')
 stuff.append(99)
 # stuff = ['book', 99]
+
+# List methods
+dir(stuff)
+# ['append', 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort']
+
+# Check is something in a List
+'book' in stuff # True
+15 in stuff # False
+
+# List can be sorted with sort()
+# built in functions that take lists as parameter len, max, min, sum
