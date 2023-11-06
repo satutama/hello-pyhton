@@ -35,3 +35,12 @@ for i in range(len(friends)):
     friend = friends[i]
     print('Happy new year', friend)
 # the same thing as the first for above
+
+# Concatenating lists using +
+a = [1,2,3]
+b = [4,5,6]
+c = a + b # [1,2,3,4,5,6]
+
+# Lists slicing
+# c[1:3] > [2, 3]
+# c[:4] -> [1, 2, 3, 4]
