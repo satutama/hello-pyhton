@@ -10,6 +10,7 @@
 # Lists index their entries based on the position in the list
 # Dictionary is a 'bag'of values, each with its own label
 # Dictionaries are like bag - no order. So we index the thintgs we put in dictionary with a 'lookup tag'
+# Dictionaries are like lists except that they use keys intead of numbers to look up values
 
 # Dictionaries are python's most powerful data collection
 # Dictionaries allow us to do fast database-like opration in Python
@@ -26,3 +27,10 @@ print(purse) # {'money': 12, 'candy': 3, 'tissues': 75}
 print(purse['candy']) # 3
 purse['candy'] = purse['candy'] + 2
 print(purse) # {'money': 12, 'candy': 5, 'tissues': 75}
+
+# Dictionary Literals (Constants)
+    # use curly braces and have a list of key: value pairs
+    # you can make an empty dictionary using empty curly braces
+
+jjj = {'chuck': 1, 'fred': 42, 'jan': 100}
+ooo = {} 
