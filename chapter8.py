@@ -71,3 +71,19 @@ while True:
     numlist.append(value)
 
 average = sum(numlist) / len(numlist)
+
+# Split functions
+abc = 'With three words'
+stuff = abc.split()
+print(stuff) # ['With', 'three', 'words']
+# split breaks a string into parts and produces a list of strings
+
+# we can access a particular word or loop through all the words
+for w in stuff:
+    print(w)
+
+# When you do not specify a delimiter, multiple spaces are treated like one delimiter
+# you can specify what delimiter character to use in the splitting
+line = 'first;second;third'
+line.split() # ['first;second;third']
+line.split(';') # ['first', 'second', 'third']
