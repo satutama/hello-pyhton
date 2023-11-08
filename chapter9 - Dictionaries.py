@@ -97,3 +97,9 @@ print(list(jjj))
 print(jjj.keys())
 print(jjj.values())
 print(jjj.items())
+
+# Two iteration Variables
+    # We loop through the key-value pairs in a diuctionary using *two* iteration variables
+    # Each iteration, the first variable is the key and the second variable is the corresponding value for the key
+for aaa, bbb in jjj.items():
+    print(aaa,bbb)
