@@ -83,3 +83,11 @@ print('Counting...')
 for word in words:
     counts[word] = counts.get(word, 0) + 1
 print('Counts:', counts)
+
+# Definite loops and dictionaries
+for key in counts:
+    print(key, counts[key])
+
+# Retrieving lists of keys and values
+    # You can get a list of keys, values, or items(both) from a dictionary
+    # list(counts), counts.keys() and counts.values()
