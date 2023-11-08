@@ -56,3 +56,14 @@ for name in names:
     else:
         counts[name] = counts[name] + 1
 print(counts) 
+
+# The get method for dictionaries
+if name in counts:
+    x = counts[name]
+else:
+    x = 0
+
+# four lines above is equal as one line below
+x = counts.get(name, 0)
+
+   
