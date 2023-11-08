@@ -46,3 +46,13 @@ ooo = {}
     #   KeyError: 'csev'
     # >>> 'csev' in ccc
     # False
+    
+# Most common name
+counts = dict()
+names = ['satty','gwyn','kana','mory','satty','satty','satty','gwyn','kana','mory']
+for name in names:
+    if name not in counts:
+        counts[name] = 1
+    else:
+        counts[name] = counts[name] + 1
+print(counts) 
