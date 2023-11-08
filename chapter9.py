@@ -64,6 +64,11 @@ else:
     x = 0
 
 # four lines above is equal as one line below
-x = counts.get(name, 0)
+x = counts.get(name, 0) # 0 is default
 
-   
+# Simplified counting with get()
+counts = dict()
+names = ['satty','gwyn','kana','mory','satty','satty','satty','gwyn','kana','mory']
+for name in names:
+    counts[name] = counts.get(name, 0) + 1
+print(counts)
