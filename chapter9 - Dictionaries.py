@@ -90,4 +90,10 @@ for key in counts:
 
 # Retrieving lists of keys and values
     # You can get a list of keys, values, or items(both) from a dictionary
-    # list(counts), counts.keys() and counts.values()
+    # list(counts), counts.keys(),  counts.values(), and counts.items()
+
+jjj = {'chuck': 1, 'fred': 42, 'jan': 100}
+print(list(jjj))
+print(jjj.keys())
+print(jjj.values())
+print(jjj.items())
