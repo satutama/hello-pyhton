@@ -34,3 +34,15 @@ print(purse) # {'money': 12, 'candy': 5, 'tissues': 75}
 
 jjj = {'chuck': 1, 'fred': 42, 'jan': 100}
 ooo = {} 
+
+# Dictionary tracebacks
+    # it is an error to reference a key which is not in the dictionary
+    # we can use the in operator to see if a key is in the dictionary
+
+    # >>> ccc = dict()
+    # >>> print(ccc['csev']) 
+    # Traceback (most recent call last):
+    #   File "<stdin>", ine 1 in <module>
+    #   KeyError: 'csev'
+    # >>> 'csev' in ccc
+    # False
