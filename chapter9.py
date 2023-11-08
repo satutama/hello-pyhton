@@ -72,3 +72,14 @@ names = ['satty','gwyn','kana','mory','satty','satty','satty','gwyn','kana','mor
 for name in names:
     counts[name] = counts.get(name, 0) + 1
 print(counts)
+
+# Counting words in text
+counts = dict()
+print('Enter a line of text:')
+line = input('')
+words = line.split()
+print('Words:', words)
+print('Counting...')
+for word in words:
+    counts[word] = counts.get(word, 0) + 1
+print('Counts:', counts)
