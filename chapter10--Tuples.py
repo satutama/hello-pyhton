@@ -16,3 +16,11 @@ dir(t) # ['count', 'index']
     # python does not have to build tuple structures to be modifiable, they are simpler and more efficient in terms of memory use and performance than list
     # when we are making 'temporary variables' we prefer tuples over list
 
+# Tuples and assignment
+    # We can also put a tuple on the left-hand side of an assignment statement
+    # We can omit the parentheses
+
+(x,y) = (4, 'Gwyn')
+print(y) # Gwyn
+(a,b) = (99, 98)
+print(a) # 99
