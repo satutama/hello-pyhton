@@ -33,3 +33,12 @@ d['Gwyn'] = 4
 
 for (k,v) in d.items():
     print(k,v)
+
+# Tuples are comparable
+    # The compariosn operators work with tuples and other sequences.
+    # If the first item is equal, pyhton goes on to the next element, and so on, until it finds elements that differ
+
+# (0,1,2) < (5,1,2) --> True
+# (0,1,20000) < (0,3,4) --> True
+# ('Jones', 'Sally') < ('Jones', 'Sam') --> True
+# ('Jones', 'Sally') > ('Adams', 'Sam') --> True
