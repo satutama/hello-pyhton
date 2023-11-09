@@ -8,3 +8,11 @@ print(names[2])
 # names[2] = 'chantal'   ----> will return traceback: 'tubple' object does not support item Assignment
 
 # Things not to do with tuples, sort, append, reverse
+
+t = tuple()
+dir(t) # ['count', 'index']
+
+# Tuples are more efficient
+    # python does not have to build tuple structures to be modifiable, they are simpler and more efficient in terms of memory use and performance than list
+    # when we are making 'temporary variables' we prefer tuples over list
+
