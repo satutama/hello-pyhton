@@ -24,3 +24,12 @@ dir(t) # ['count', 'index']
 print(y) # Gwyn
 (a,b) = (99, 98)
 print(a) # 99
+
+# Tuples and dictionaries
+    # The items() method in dictionaries returns a list of (key, value) tuples
+d = dict()
+d['satty'] = 2
+d['Gwyn'] = 4
+
+for (k,v) in d.items():
+    print(k,v)
