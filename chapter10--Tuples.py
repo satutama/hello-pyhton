@@ -66,3 +66,18 @@ for (k,v) in d.items():
     # a 10
     # b 1
     # c 22
+
+# Sort by values instead of key
+    # if we could construct a list of tuples of the form(value, key) we could sort by value
+    # We do this with a for loop that creates a list of tuples
+
+    # >>> c = {'a': 10, 'c': 22, 'b': 1}
+    # tmp = list()
+    # >>> for k,v in c.items():
+    # ...     tmp.append((v,k))
+    # ...
+    # >>> print(tmp)
+    # [(10, 'a'), (22, 'c'), (1, 'b')]
+    # >>> tmp = sorted(tmp, reverse=True)
+    # >>> print(tmp)
+    # [(22, 'c'), (10, 'a'), (1, 'b')]
