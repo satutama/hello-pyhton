@@ -42,3 +42,13 @@ for (k,v) in d.items():
 # (0,1,20000) < (0,3,4) --> True
 # ('Jones', 'Sally') < ('Jones', 'Sam') --> True
 # ('Jones', 'Sally') > ('Adams', 'Sam') --> True
+
+# Sorting lists of tuples
+    # We can teake advantage of the ability to sort a list of tuples to get a sorted version of a dictionary
+    # First we sort the dictionary by the key using the items() method and sorted() function
+
+    # >>> d = {'a': 10, 'b': 1, 'c': 22}
+    # >>> d.items()
+    # dict_items([('a', 10), ('b', 1), ('c', 22)])
+    # >>> sorted(d.items()) 
+    # [('a', 10), ('b', 1), ('c', 22)]
