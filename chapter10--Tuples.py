@@ -52,3 +52,17 @@ for (k,v) in d.items():
     # dict_items([('a', 10), ('b', 1), ('c', 22)])
     # >>> sorted(d.items()) 
     # [('a', 10), ('b', 1), ('c', 22)]
+
+    # We can do this even more directly using the built-in funtion sorted
+    # that takes a sequence as a parameter and returns a sorted sequence
+
+    # >>> d = {'a': 10, 'b': 1, 'c': 22}
+    # >>> t = sorted(d.items())
+    # >>> t
+    # [('a', 10), ('b', 1), ('c', 22)]
+    # >>> for k,v in sorted(d.items()):
+    # ...   print (k,v)
+    # ...   
+    # a 10
+    # b 1
+    # c 22
