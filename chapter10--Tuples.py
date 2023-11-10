@@ -81,3 +81,33 @@ for (k,v) in d.items():
     # >>> tmp = sorted(tmp, reverse=True)
     # >>> print(tmp)
     # [(22, 'c'), (10, 'a'), (1, 'b')]
+
+# Top 10 most common words
+print('')
+print('top 10 most common words')
+print('')
+
+fhand = open('ikigai.txt')
+counts = dict()
+for line in fhand:
+    words = line.split()
+    for word in words:
+        counts[word] = counts.get(word, 0) + 1
+
+lst = list()
+for key, val in counts.items():
+    newtup = (val, key)
+    lst.append(newtup)
+
+lst = sorted( lst, reverse=True)
+
+for val, key in lst[:10] :
+    print(key,val)
+
+# Even shorted version
+    # >>> c = {'a': 10, 'c': 22, 'b': 1}
+    # print(sorted([v,k] for k,v in c.items()]))
+    # [(1, 'b'), (10, 'a'), (22, 'c')]
+
+    # List comprehension creates a dynamic list. In this case, we make a list of reversed tuples and then sort it.
+    
