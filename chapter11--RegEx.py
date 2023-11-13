@@ -20,3 +20,22 @@
     # [a-z0-9]  The set of characters can include a range
     # (         Indicates where string extraction is to start
     # )         Indicates where string extraction is to end
+
+# Before you can use regular expressions in your program, you must import the library using "import re"
+# You can use re.search() to see if a string matches a regex, similar to using the find() method for strings
+# You can use re.findall() to extract portions of a string that match your regex, similar to a combination of find() and slicing: var[5:10]
+
+# Using re.search() like find()
+    # 2 examples below are the same, but the latter use re module
+hand = open('mbox.txt')
+for line in hand:
+    line = line.rstrip()
+    if line.find('from:') >=0:
+        print(line)
+
+import re
+hand = open('mbox.txt')
+for line in hand:
+    line = line.rstrip()
+    if re.search('from:', line):
+        print(line)
