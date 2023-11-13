@@ -53,3 +53,11 @@ for line in hand:
     line = line.rstrip()
     if re.search('^from:', line):
         print(line)
+
+# Example  
+    # X-Sieve: CMU.Sieve 2.3
+    # X-DSPAM-Result: Innocent
+    # ^X.*:
+    
+    # X-Plane is behind schedule: two weeks ---> If we dont want this to match then answer is below
+    # ^X-\S+:
