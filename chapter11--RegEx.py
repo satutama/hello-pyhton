@@ -39,3 +39,17 @@ for line in hand:
     line = line.rstrip()
     if re.search('from:', line):
         print(line)
+
+# Using re.search() like startswith()
+hand = open('mbox.txt')
+for line in hand:
+    line = line.rstrip()
+    if line.startswith('from:'):
+        print(line)
+
+import re
+hand = open('mbox.txt')
+for line in hand:
+    line = line.rstrip()
+    if re.search('^from:', line):
+        print(line)
