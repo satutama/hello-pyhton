@@ -80,7 +80,7 @@ for line in hand:
 
     # >>> import re
     # >>> x = 'From: Using the : character'
-    # >>> y = re.findall('F.+:', x)   
+    # >>> y = re.findall('^F.+:', x)   
     # >>> print(y)
     # ['From: Using the :']
     # >>>
@@ -90,4 +90,18 @@ for line in hand:
 
     # ^F is first character in the match is an F
     # .+ is one or more characters
+    # : is last character in the match is a :
+
+# Non-Greedy Matching
+    # The repeat characters (* and +) push outward in both directions (greedy) to match the largest possible string
+
+    # >>> import re
+    # >>> x = 'From: Using the : character'
+    # >>> y = re.findall('^F.+?:', x)   
+    # >>> print(y)
+    # ['From:']
+    # >>>
+
+    # ^F is first character in the match is an F
+    # .+? is one or more characters but not greedy
     # : is last character in the match is a :
