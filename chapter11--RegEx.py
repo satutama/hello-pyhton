@@ -54,10 +54,23 @@ for line in hand:
     if re.search('^from:', line):
         print(line)
 
-# Example  
-    # X-Sieve: CMU.Sieve 2.3
-    # X-DSPAM-Result: Innocent
-    # ^X.*:
-    
-    # X-Plane is behind schedule: two weeks ---> If we dont want this to match then answer is below
-    # ^X-\S+:
+    # Example  
+        # X-Sieve: CMU.Sieve 2.3
+        # X-DSPAM-Result: Innocent
+        # ^X.*:
+        
+        # X-Plane is behind schedule: two weeks ---> If we dont want this to match then answer is below
+        # ^X-\S+:
+
+# Matching and Extracting
+    # re.search() returns a True/False depending on whether the string matches the regular expression
+    # if we actually want the matching strings to be extracted, we use re.findall()
+
+    # >>> import re
+    # >>> x = 'My 2 favorite numbers are 19 and 42'
+    # >>> y = re.findall('[0-9]+', x)    --> [0-9]+ is one or more digits 
+    # >>> print(y)
+    # ['2', '19', '42']
+    # >>> y = re.findall('[AEIOU]+',x) 
+    # >>> print(y)
+    # []
