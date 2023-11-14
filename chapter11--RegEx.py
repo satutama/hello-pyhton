@@ -74,3 +74,20 @@ for line in hand:
     # >>> y = re.findall('[AEIOU]+',x) 
     # >>> print(y)
     # []
+
+# Warning: Greedy Matching
+    # The repeat characters (* and +) push outward in both directions (greedy) to match the largest possible string
+
+    # >>> import re
+    # >>> x = 'From: Using the : character'
+    # >>> y = re.findall('F.+:', x)   
+    # >>> print(y)
+    # ['From: Using the :']
+    # >>>
+
+    # Greedy means everytime there's a choice, it picks the longer one
+    # In this case returning 'From: Using the :' iso 'From:'
+
+    # ^F is first character in the match is an F
+    # .+ is one or more characters
+    # : is last character in the match is a :
