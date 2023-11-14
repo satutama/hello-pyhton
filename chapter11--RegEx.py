@@ -127,3 +127,50 @@ for line in hand:
     # find string start with From
     # parentheses say start extraction and end extraction
     # that's why it returns only the email, not including the From
+
+
+# String Parsing examples
+    # Extracting a host name - using find and string slicing
+        # >>> data = 'From satria.u.s@fontys.nl Sat Jan  5 09:13:16 2008'
+        # >>> atpos = data.find('@')
+        # >>> print(atpos)
+        # 15
+        # >>> sppos = data.find(' ', atpos)
+        # >>> print(sppos)
+        # 25
+        # >>> host = data[atpos+1 : sppos] 
+        # >>> print(host)
+        # fontys.nl
+    
+    # Double split pattern
+        # >>> data = 'From satria.u.s@fontys.nl Sat Jan  5 09:13:16 2008'  
+        # >>> words = data.split()         
+        # >>> email = words[1]              -> satria.u.s@fontys.nl
+        # >>> pieces = email.split('@')     -> ['satria.u.s', 'fontys.nl']
+        # >>> print(pieces[1])
+        # fontys.nl
+
+    # Regex version
+        # >>> import re
+        # >>> data = 'From satria.u.s@fontys.nl Sat Jan  5 09:13:16 2008' 
+        # >>> y = re.findall('@([^ ]*)', data) 
+        # >>> print(y)
+        # ['fontys.nl']
+
+        # @([^ ]*)  --> @ means look through the string until you find an @ sign
+        #           --> [^ ] match non-blank character
+        #           --> * match many of them
+        #           --> (....) start and end of extraction
+
+    # Even Cooler Regex version
+        # >>> import re
+        # >>> data = 'From satria.u.s@fontys.nl Sat Jan  5 09:13:16 2008' 
+        # >>> y = re.findall('^From .*@([^ ]*)', data) 
+        # >>> print(y)
+        # ['fontys.nl']
+
+        # @([^ ]*)  --> ^From is Starting at the beginning of the line, look for the string 'From'
+        #           --> @ means look through the string until you find an @ sign
+        #           --> [^ ] match non-blank character
+        #           --> * match many of them
+        #           --> (....) start and end of extraction
