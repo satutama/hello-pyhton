@@ -105,3 +105,25 @@ for line in hand:
     # ^F is first character in the match is an F
     # .+? is one or more characters but not greedy
     # : is last character in the match is a :
+
+# Fine-Tuning string extraction
+    # You can refine the match for re.findall() and separately determine which portion of the match is to be extracted by using parentheses
+    
+    # >>> x = 'From satria.u.s@fontys.nl Sat Jan  5 09:13:16 2008'
+    # >>> y = re.findall('\\S+@\\S+', x) or y = re.findall(r'\S+@\S+', x)
+    # >>> print(y)
+    # ['satria.u.s@fontys.nl']
+
+    # \S+ is at least one non-whitespace character
+    # \ is the escape character in python string literals
+    # use double \\ to use \ or use a "raw string" with an r in front of the string
+
+    # Another example
+    # >>> x = 'From satria.u.s@fontys.nl Sat Jan  5 09:13:16 2008'
+    # >>> y = re.findall(r'^From (\S+@\S+)', x)
+    # >>> print(y)
+    # ['satria.u.s@fontys.nl']
+
+    # find string start with From
+    # parentheses say start extraction and end extraction
+    # that's why it returns only the email, not including the From
