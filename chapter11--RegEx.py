@@ -174,3 +174,7 @@ for line in hand:
         #           --> [^ ] match non-blank character
         #           --> * match many of them
         #           --> (....) start and end of extraction
+
+# Escape character
+    # If you want a special regular expression character to just behave normally ( most of the time) you prefix it with '\'
+    # for example if you want to find a dollar sign - \$
