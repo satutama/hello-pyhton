@@ -24,10 +24,27 @@ Browser <-- Internet --> Web server
         
 # Sockets in Python
     Python has built-in support for TCP sockets
-    
+
     >>> import socket
     >>> mysock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     >>> mysock.connect( ('data.pr4e.org', 80) )
 
     data.pr4e.org = Host, 80 = Port
+
+# Application Protocol
+    . Since TCP (and python) gives us reliable socket, what do we want to do with the socket?
+    . Application Protocols
+        - Mail
+        - World Wide Web
+    
+    HTTP (HyperText Transfer Protocol) is the set of rules to allow browsers
+    to retrieve web docs from servers over the internet
+
+# typical URL 
+    http://www.satutama.com/page1.htm
+    http://             -> Protocol
+    www.satutama.com    -> host
+    page1.htm           -> document
+
+
 '''
