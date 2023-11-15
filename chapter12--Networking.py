@@ -25,9 +25,9 @@ Browser <-- Internet --> Web server
 # Sockets in Python
     Python has built-in support for TCP sockets
 
-    >>> import socket
-    >>> mysock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    >>> mysock.connect( ('data.pr4e.org', 80) )
+    import socket
+    mysock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    mysock.connect( ('data.pr4e.org', 80) )
 
     data.pr4e.org = Host, 80 = Port
 
@@ -48,3 +48,20 @@ Browser <-- Internet --> Web server
 
 
 '''
+
+# Write a web browser
+
+# An HTTP request in Python
+import socket
+
+mysock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+mysock.connect(('data.pr4e.org', 80))
+cmd = 'GET http://data.pr4e.org/romeo.txt HTTP/1.0\n\n'.encode()
+mysock.send(cmd)
+
+while True:
+    data = mysock.recv(512)     # receive 512 characters at a time
+    if (len(data) < 1):         # if we get 0 characters then connection close
+        break
+    print(data.decode())        # we have to decode before we print
+mysock.close()
