@@ -129,3 +129,28 @@ fhand = urllib.request.urlopen('http://www.dr-chuck.com/page1.htm')
 for line in fhand:
     print(line.decode().strip())
 
+
+# Web Scraping
+    # When a program or script pretends to be a browser and retrieves web page, looks at those web pages, extract infd, and then look at more web pages
+    # Search engines scrape web pages - we call this "spidering the web" or "web crawling"
+
+    # Why Scrape
+        # Pull data - particularly social data
+        # get your own data back out of some system that has no "export capability"
+        # Monitor a site for new information
+        # Spider the web to make a database for a search engine
+
+    # Easy way - free software -> Beautiful Soup (crummy.com/software/BeautifulSoup/)
+ 
+import urllib.request, urllib.parse, urllib.error
+from bs4 import BeautifulSoup
+
+url = input('Enter - ')
+html = urllib.request.urlopen(url).read()
+soup = BeautifulSoup(html, 'html.parser')
+
+# retrieve all of the anchor tags <a href="----">...</a>
+tags = soup('a')
+for tag in tags:
+    print(tag.get('href', None))
+
