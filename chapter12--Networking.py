@@ -96,5 +96,15 @@ mysock.close()
         - Working with string variables in Python programs and reading data from files usually "just works"
         - When we talk to a network resource using sockets or talk to a database we have to encode and decode data (usually to UTF-8)
 
-      
-'''
+    Python Strings to byte
+        . When we talk to an external resource like a network socket we sends bytes, so we need to encode python 3 strings into a given character encoding
+        . When we read data from an external resource, we must decode it based on the character set so it properly represented in Python 3 as a string.
+
+                              encode()               send()
+                                -->                   -->    
+             String Unicode            Bytes UTF-8          Socket (Network)
+                                <--                   <--    
+                              decode()               recv()
+
+
+    '''
