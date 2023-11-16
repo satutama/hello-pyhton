@@ -65,3 +65,36 @@ while True:
         break
     print(data.decode())        # we have to decode before we print
 mysock.close()
+
+'''
+# Text Processing
+
+    Representing Simple Strings
+        - Each character is represented by a number between 0 - 256 stored in 8 bits of memory
+        - 8 bits of memory is a 'byte' of memory (1 Terabytes is 8 Terabits)
+        - the ord() function tells us the numberic value of a simpe ASCII character
+    
+        >>> print(ord('H')) 
+        72
+        >>> print(ord('e')) 
+        101
+        >>> print(ord('\n'))  
+        10
+        >>>
+
+    Multi-Byte Characters
+        . To represent the wide range of characters computers must handle how we represent characters with more than one byte
+            - UTF-16 -- Fixed length - Two bytes
+            - UTF-32 -- Fixed length - Four bytes
+            - UTF-8  -- 1-4 bytes
+                . Upwards compatible with ASCII (1byte)\
+                . Automatic detection between ASCII and UTF-8
+                . UTF-8 is recommended practice for encoding data to be exchanged between systems
+
+    Pyhton3 and Unicode
+        - Internally, all strings are unicode
+        - Working with string variables in Python programs and reading data from files usually "just works"
+        - When we talk to a network resource using sockets or talk to a database we have to encode and decode data (usually to UTF-8)
+
+      
+'''
