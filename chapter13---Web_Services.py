@@ -35,4 +35,9 @@ XML - eXtensible Markup Language
         . often called "W3C schema" because "Schema" is considered generic
         . More commonly it is called XSD because the file names end in .xsd
 
+        XSD structure - *check XSD-details.jpg
+            . xs:element           
+            . xs:sequence           
+            . xs:complexType
+
 '''
