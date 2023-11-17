@@ -21,4 +21,18 @@ XML - eXtensible Markup Language
         . Self closing tag <email/>
         . Simple element (or Node) - <name>....</name>
         . Complex element - Element that has childs element
+    
+    XML Schema
+        . Description of the legal format of an XML document
+        . Expressed in terms of constraints on the structure and content of documents
+        . Often used to specify a "contract" between systems - "My system will only accept XML that conforms to this particular Schema."
+        . If a particular piece of XML meets the specification of the schema - it is said to validate
+        . XML document and XML schema contract needs to be validated (check XML-validation image)
+        . There's a number of different XML Schema languages, what we're going to focus on is XML Schema from W3C - (XSD)
+
+    XSD XML Schema (W3C Spec)
+        . We will focus on the World Wide Web Consortium (W3C) version
+        . often called "W3C schema" because "Schema" is considered generic
+        . More commonly it is called XSD because the file names end in .xsd
+
 '''
