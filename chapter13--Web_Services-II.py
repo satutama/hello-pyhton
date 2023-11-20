@@ -66,4 +66,6 @@ Application Program Interface (API)
 
 *Check API example folder
 
+*Excersise: https://www.youtube.com/watch?v=TJGJN0T8tak&ab_channel=freeCodeCampConcepts
+
 '''
