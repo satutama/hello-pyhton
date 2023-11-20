@@ -45,3 +45,12 @@ for item in info:
     print('Name:', item["name"])
     print('Id:', item["id"])
     print('Attribute:', item["x"])
+
+
+'''
+Service Oriented Approach
+    . Most non-trivial web applications use services
+    . They use services from other applications (credit card charge, Hotel reservation system)
+    . Services publish the "rules" applications must follow to make use of the service (API)
+
+'''
