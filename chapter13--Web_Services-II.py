@@ -25,3 +25,23 @@ info = json.loads(data)
 
 print('Name:', info["name"])
 print('Hide:', info["email"]["hide"])
+
+
+# More complex version
+import json
+input = '''[
+{   "id": "1",
+    "x": "2",
+    "name": "Sat"
+},
+{   "id": "2",
+    "x": "3",
+    "name": "Chan"
+}
+]'''
+
+info = json.loads(input) 
+for item in info:
+    print('Name:', item["name"])
+    print('Id:', item["id"])
+    print('Attribute:', item["x"])
