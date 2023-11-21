@@ -18,3 +18,17 @@ Python Objects
         . Field or attribute - A bit of data in a class - length
         . Object or Instance - A particular instance of a class - Lassie
 '''
+
+# Sample code
+class PartyAnimal:                  # this is the template for making PartyAnimal objects
+    x = 0                           # each party animal has a bit of data
+
+    def party(self):
+        self.x = self.x + 1
+        print("So far", self.x)
+
+an = PartyAnimal()                  # construct a PartyAnimal object and store in an
+
+an.party()                          # short version of this syntax => PartyAnimal.party(an)
+an.party()
+an.party()
