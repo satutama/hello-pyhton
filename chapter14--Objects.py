@@ -62,3 +62,39 @@ Playing with dir() and type()
     print(type(an))  --> <class '__main__.PartyAnimal'>
     print(dir(an))   --> ['__class__', ... , 'party', 'x']
 '''
+
+'''
+Object Lifecycle
+    . Objects are created, used and discarded
+    . We have special blocks of code (methods) that get called
+        . At the moment of creation (constructor)
+        . At the moment of destruction (destructor)
+    . Constructors are used a lot
+    . Destructors are seldom used
+
+    Constructor
+        The primary purpose of the constructor is to set up some instance variables to have the proper intial values when the object is created
+
+
+'''
+
+# Sample code
+class PartyAnimal:                  
+    x = 0 
+
+    def __init__(self):                     # The constructor and destrucor are optional.
+        print('I am constructed')
+
+    def party(self):
+        self.x = self.x + 1
+        print("So far", self.x)
+    
+    def __del__(self):
+        print('I am destructed, self.x')
+
+an = PartyAnimal()                  
+
+an.party()                          
+an.party()
+an = 42
+print('an contains', an)
