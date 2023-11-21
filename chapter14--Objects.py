@@ -82,9 +82,9 @@ Object Lifecycle
 class PartyAnimal:                  
     x = 0 
 
-    def __init__(self):                     # The constructor and destrucor are optional.
-        print('I am constructed')
-
+    def __init__(self):                     # The constructor and destrucor are optional. self is the object itself. 
+        print('I am constructed')           # constructor can have additional parameters (i.e def __init__(self, exampleParam))
+                                            # which can be used to setup instance variables for the particular instance of the class
     def party(self):
         self.x = self.x + 1
         print("So far", self.x)
