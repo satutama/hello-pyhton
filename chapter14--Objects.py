@@ -81,8 +81,9 @@ Object Lifecycle
 # Sample code
 class PartyAnimal:                  
     x = 0 
-
-    def __init__(self):                     # The constructor and destrucor are optional. self is the object itself. 
+    name = ""
+    def __init__(self, name):                     # The constructor and destrucor are optional. self is the object itself. 
+        self.name = name
         print('I am constructed')           # constructor can have additional parameters (i.e def __init__(self, exampleParam))
                                             # which can be used to setup instance variables for the particular instance of the class
     def party(self):
@@ -92,7 +93,7 @@ class PartyAnimal:
     def __del__(self):
         print('I am destructed, self.x')
 
-an = PartyAnimal()                  
+an = PartyAnimal("Sat")                  
 
 an.party()                          
 an.party()
@@ -108,3 +109,13 @@ Inheritance
     . The new class (child) has all the capabilities of the old class (parent) - and the some more
 '''
 
+class FootballFan(PartyAnimal): # FootballFan is a class which extends PartyAnimal
+    points = 0
+    def touchdown(self):
+        self.points = self.points + 7
+        self.party()
+        print(self.name, "points", self.points)
+
+j = FootballFan("Chant")
+j.party()
+j.touchdown()
