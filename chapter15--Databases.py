@@ -36,4 +36,9 @@ Common Database Systems
     Smaller projects, free and open source
     . HSQL, SQLite, Postgres,...
 
+
+SQLlite is very popular. SQLite is what's called an embedded database system. Python is builtin with it.
+It's very popular because it's free, open source and such a tiny little piece of stoftware that you just include it in other software.
+SQLite browsers allows us to directly manipulate SQLite files (http://sqlitebrowser.org)
+
 '''
