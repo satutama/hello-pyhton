@@ -10,5 +10,13 @@ Relational Databases
         Tuple (or row) - a set of fields that generally represents an "object" like a person or a music trac
         Attribute (also column or field) - on of possibly many elements of data corresponding to the object represented by the row
 
-    
+
+SQL - Structured Query Language
+    Language we use to issue commands to the databse
+    . Create a table
+    . Retrieve some data
+    . Insert data
+    . Delete data
+
+
 '''
