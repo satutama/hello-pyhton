@@ -42,3 +42,9 @@ It's very popular because it's free, open source and such a tiny little piece of
 SQLite browsers allows us to directly manipulate SQLite files (http://sqlitebrowser.org)
 
 '''
+
+'''
+SQL Syntax
+
+check database reference folder on database-handout.txt file
+'''
