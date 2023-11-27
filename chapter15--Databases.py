@@ -57,4 +57,10 @@ Database Design
     . For each 'piece of info':
         Is the column an boject or an attribut of another object?
         Once we define objects, we need to define the relationships between objects
+
+Database Normalization (3NF)
+    . There is *tons* of database theory - way too much to understand witouht escessive predicate calculus
+    . Do not replicate data - reference data - point at data
+    . Use intergers for keys and for references
+    . Add a special "key" column to each table which we will make references to (common to call this column 'id').          
 '''
