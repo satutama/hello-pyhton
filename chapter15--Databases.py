@@ -63,4 +63,17 @@ Database Normalization (3NF)
     . Do not replicate data - reference data - point at data
     . Use intergers for keys and for references
     . Add a special "key" column to each table which we will make references to (common to call this column 'id').          
+
+Integer reference Pattern
+    . We use integers to reference rows in another table
+    . Three kinds of keys: 
+        - Primary key, generally an integer auto-increment field
+        - logical key, What the outside world uses for lookup
+        - foreign key, generally an integer key pointing to a row in another table
+
+    Key Rules
+    . Never use your logical key as the primary key
+    . Logical keys can and do change, albeit slowly
+    . Relationships that are based on matching string fields are less efficient than integers
+    
 '''
