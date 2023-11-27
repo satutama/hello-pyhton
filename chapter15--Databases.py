@@ -48,3 +48,13 @@ SQL Syntax
 
 check database reference folder on database-handout.txt file
 '''
+
+
+'''
+Database Design
+    . Building a Data Model basic rule: Don't put the same string data in twice - use a relationship instead
+    . Where there is one thing in the "real world" there should be one copy of that thing in the database
+    . For each 'piece of info':
+        Is the column an boject or an attribut of another object?
+        Once we define objects, we need to define the relationships between objects
+'''
