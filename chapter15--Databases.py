@@ -105,3 +105,17 @@ Using Join Across Tables
     ON Track.genre_id = Genre.id AND Track.album_id = Album.id 
     AND Album.artist_id = Artist.id
 '''
+
+'''
+Many-To-Many Relationships
+    . Sometimes we need to model a relationship that is many-to-many (students and courses for example)
+    . We need to add a 'connection' table with two foreign keys
+    . There is usually no separate primary key
+
+    For example
+    Course (table)          Member (table)          User (table)
+    . Id                    . user_id               . id
+    . title                 . course_id             . name
+
+
+'''
