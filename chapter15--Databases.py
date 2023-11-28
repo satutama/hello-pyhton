@@ -77,3 +77,31 @@ Integer reference Pattern
     . Relationships that are based on matching string fields are less efficient than integers
     
 '''
+
+'''
+Using Join Across Tables
+    Relational Power
+    -   By removing the replicated data and replacing it with refrences to a single copy of each bit of data 
+        we build a 'web' of information that the relational database can read through very quickly - even for very large amounts of data
+    -   Often when you want some data it comes from a number of tables linked by these foreign keys
+
+    
+    The JOIN Operation 
+    . Links across several tables as part of a select operation
+    . You must tell the JOIN how to use the keys that make the connection between the tables using an ON clause
+    . Joining two tables without an ON clause gives all possible combination of rows
+
+    SELECT Album.title, Artist.name FROM Album JOIN Artist 
+    ON Album.artist_id = Artist.id
+
+    Album.title and Artist.name -> What we want to see
+    Album and Artist -> The tables that hold the data
+    Album.artist_id = Artist.id -> How the tables linked
+    
+    Below is the sql that uses data from all tables
+
+    SELECT Track.title, Artist.name, Album.title, Genre.name 
+    FROM Track JOIN Genre JOIN Album JOIN Artist 
+    ON Track.genre_id = Genre.id AND Track.album_id = Album.id 
+    AND Album.artist_id = Artist.id
+'''
